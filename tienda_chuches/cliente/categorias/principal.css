@@ -1,0 +1,23 @@
+
+div#segundo{
+    overflow-x: auto;
+}
+button{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+
+}
+#izq{
+    float: left;
+}
+
+#imagenes{
+    list-style: none;
+    padding-left: 0px;
+}
+#derech{
+
+      float: right;
+
+}

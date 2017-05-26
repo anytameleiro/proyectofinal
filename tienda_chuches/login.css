@@ -1,0 +1,57 @@
+
+body {
+background-size: 100%;
+background-attachment: fixed;
+background-image: url(img/Chuches.png);
+}
+img{
+  width: 100%;
+}
+
+.login1 {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+#login2 {
+  font-family: cursive;
+  font-size:14px;
+  font-weight:bolder;
+  position: relative;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.55), 0 5px 5px 0 rgba(0, 0, 0, 0.6);
+  border-radius:20px;
+  background-image: url(img/Chuches1.png);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+#login2 input {
+  outline: 0;
+  width: 100%;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+#entrar{
+  font-family: cursive;
+  width: 100%;
+  border: 0;
+  padding: 13px;
+  font-size: 15px;
+  background-color:#f16027;
+  border-radius:20px;
+}
+#entrar:hover{
+  background-color: #db5727;
+}
+.mensage {
+  margin: 15px 0 0;
+  color: #ffffff;
+  font-size: 12px;
+}
+.mensage a {
+  color: #db5727;
+  text-decoration: none;
+}

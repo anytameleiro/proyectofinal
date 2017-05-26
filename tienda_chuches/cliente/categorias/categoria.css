@@ -1,0 +1,258 @@
+
+body {
+
+	background-attachment: fixed;
+	background-image: url(../fondoimg/fondo.jpg);
+    width: 100%;
+    margin: 0px auto;
+    min-width: 370px;
+}
+
+ ul, li {
+
+	list-style: none;
+    position:relative;
+}
+
+
+
+.planContainer{
+	padding-left: 0px;
+
+}
+
+.plan {
+    padding: 15px;
+    box-sizing: border-box;
+	background-color: rgba(255,255,255,0.8);
+	float: left;
+	text-align: center;
+	border-radius: 5px;
+	width: 277px;
+	height: 400px;
+	margin: 0 20px 20px 0;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.44);
+
+}
+
+ .title h2 {
+	font-size: 25px;
+	font-weight: 200;
+	color: #3e4f6a;
+}
+
+.price {
+  background: #3e4f6a;
+  color: #fff;
+  width:70px;
+  height:70px;
+  border-radius:60px;
+  line-height:70px;
+  text-align:center;
+  font-size:20px;
+}
+
+ .plan:hover {
+	-webkit-transform: scale(1.04);
+}
+
+.login1 {
+
+  
+  margin: auto;
+
+}
+#login2 {
+
+  border-radius:20px;
+  background: rgba(0, 0, 0, 0.4);
+  background-attachment: fixed;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  clear:both;
+  overflow:hidden;
+/*  min-width: 1260px;*/
+  width:93%;
+ 	
+  padding-bottom:  10px;
+  margin:10px auto;
+  padding: 5px;
+  text-align: center;
+  list-style:none;
+}
+table{
+	text-align: center;
+}
+
+.content
+{
+	position: relative;
+	margin-top: 20px;
+	width: 150px;
+}
+
+.u a
+{
+	display: block;
+	background: #F8F8F8;
+	width: 240px;
+	height: 40px;
+	padding: 0 0 0 10px;
+	font: bold 13px Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: rgba( 0, 0, 0, 0.4 );
+	line-height: 40px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.u a:nth-child( 2 )
+{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.u a:last-child
+{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.u a:hover { color: #555555; }
+
+.u a:hover > .octicon { color: #555555; }
+
+.arrow
+{
+	width: 0;
+	height: 0;
+	margin-left: 15px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 9px solid #F8F8F8;
+}
+#m{
+	padding-left:  50px;
+	padding-right:  250px;
+}
+#blanco{
+	background-color: white;
+	padding: 50px;
+	border-radius: 20px;
+	color: rgba( 0, 0, 0, 0.7 );
+	margin: 20px;
+}
+span{
+	width: 150px;
+	display: inline-block;
+	margin-bottom: 21px;
+}
+#negro span{
+width: 250px;
+}
+button{
+  width: 80%;
+  border: 0;
+  padding: 13px;
+  font-size: 15px;
+  background-color:#8d7b8c;
+  border-radius:20px;
+  color: black;
+
+}
+button:hover{
+  background-color: #635762;
+}
+input[type="number"] {
+   width:50px;
+}
+#desc{
+
+	padding: 25px;
+	width: 250px;
+	height: 280px;
+	overflow-x:auto;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 20px;
+    margin-top: 50px;
+}
+#atras{
+	background-color: #425470;
+	padding: 10px;
+	border-radius: 20px;
+	color:white;
+    text-decoration: none;
+}
+#table{
+	margin: 20px;
+}
+
+#td{
+	width: 500px;
+}
+#dos{
+      border: rgba( 0, 0, 0, 0.4 ) 1px solid ;
+      text-align:center;
+      border-collapse: collapse;
+      padding: 8px;
+  }
+#negro{
+		background-color:#425470;
+		border-radius: 20px;
+		color: white;
+		margin-top: 10px;
+/*		min-width: 1260px;*/
+  width:93%;
+		padding: 1px;
+		font-size: 12px;
+		clear: both;
+		overflow: hidden;
+
+		box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 0 5px 5px 0 rgba(0, 0, 0, 0.34);
+		
+		text-align: center;
+        margin: 10px auto;
+    
+}
+#first_level{
+/*  min-width: 1260px;*/
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+}
+.plan2 {
+    padding: 15px;
+    box-sizing: border-box;
+	float: left;
+	text-align: center;
+	margin: 10px;
+}
+ .plan2:hover {
+	-webkit-transform: scale(1.04);
+}
+#centrar{
+    
+}
+@media (min-width: 1000px) {
+  #desc {
+    
+	padding: 25px;
+	width: 400px;
+	height: 280px;
+	overflow-x:auto;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 20px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  #desc {
+    
+	padding: 25px;
+	width: 600px;
+	height: 280px;
+	overflow-x:auto;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 20px;
+    margin-top: 50px;
+  }
+}
