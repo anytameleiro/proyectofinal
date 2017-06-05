@@ -14,6 +14,7 @@ $user=$_SESSION["user"];
     <a href='modi.php?apo=$user'>Modificar perfil</a>
     <a href='contrasenia.php?apo=$user'>Cambiar contraseña</a>
     <a href='pedidos.php'>Pedidos</a>
+    <a href='cambio_css.php' >Temas</a>
   </div>
 </div>";
   echo"</td>";

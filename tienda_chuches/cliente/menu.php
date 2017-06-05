@@ -27,15 +27,14 @@ include_once("../../connection.php");
 
     <div id="titulo"><h1>TODO CHUCHES</h1></div>
 
-    <div id="cerrar"><p><a id="salir" href='../../salir.php' >Cerrar sesion</a></p><br>
+    <div id="cerrar"><p><a id="salir" href='../../salir.php' >Cerrar sesion</a></p>
     <?php
 
     echo"<a id='perfil' href='perfil.php'>Mi perfil</a>";
-
     ?>
-
-    </div>
+       
     
+</div>
 </div>
 <div class="topnav" id="myTopnav">
         

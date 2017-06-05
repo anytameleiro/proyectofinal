@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="categoria.css">
       <link rel="shortcut icon" href="../../img/logo.ico">
     <title>TODO CHUCHES</title>
+      <style>
+      body{
+          min-width: 796px;
+      }
+</style>
+    </head>
     <body>
 
       <?php
@@ -19,6 +25,10 @@
 
       if (isset($_SESSION["user"])) {
           include_once("../menu.php");
+          
+          include_once("../connection.php");
+          
+          include_once("../tema.php");
           echo" <div class='login1'>
             <div id='login2'>";
             echo"<table>
@@ -29,7 +39,6 @@
         echo "<h1>Modificar perfil</h1>";
 
       $apo = $_GET['apo'];
-      include_once("../connection.php");
         if ($result2 = $connection->query("SELECT * from cliente where apodo ='$apo';")) {
 
         $obj = $result2->fetch_object();

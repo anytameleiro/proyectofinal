@@ -1,0 +1,55 @@
+.plan {
+	background-color: rgba(255,255,255,0.8);
+}
+#login2 {
+  background: rgba(255, 0, 0, 0.2);
+}
+#blanco{
+	background-color: #f2d7d7;
+}
+button{
+  background-color:#c68585;
+}
+button:hover{
+  background-color: #ad7474;
+}
+#desc{
+	background-color: rgba(255,255,255,0.9);
+}
+#atras{
+	background-color: #a81515;
+}
+#negro{
+		background-color:#a81515;
+}
+@media (min-width: 1000px) {
+  #desc {
+	background-color: rgba(255,255,255,0.9);
+  }
+}
+@media (min-width: 1200px) {
+  #desc {
+	background-color: rgba(255,255,255,0.9);
+  }
+}
+.price {
+  background: #e23434;
+}
+
+#dos a{
+    color: #db2323;
+}
+#blanco a{
+    color: #db2323;
+}
+/*-------------------------------------------------------*/
+
+#cuerpo {
+    background-color: #a81515;
+}
+.topnav {
+    background-color: #d63e3e;
+}
+.topnav a:hover {
+    background-color: #edb4b4;
+}

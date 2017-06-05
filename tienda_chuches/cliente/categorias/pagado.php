@@ -29,6 +29,10 @@
     //SESSION ALREADY CREATED
 
     include_once("../menu.php");
+      
+    include_once("../connection.php");
+      
+    include_once("../tema.php");
     echo" <div class='login1'>
       <div id='login2'>";
       echo"<table>  <tr><td>";

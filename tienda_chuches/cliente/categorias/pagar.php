@@ -1,5 +1,6 @@
 <?php
   ob_start();
+ini_set('error_reporting',0);
 ?>
 <!DOCTYPE html>
 <html lang="">
@@ -33,13 +34,17 @@ table{
     //SESSION ALREADY CREATED
 $idped = $_GET['idped'];
     include_once("../menu.php");
-
+    
+    include_once("../connection.php");
+      
+    include_once("../tema.php");
+      
     echo" <div class='login1'>
       <div id='login2'>";
       echo"<table>  <tr><td>";
           echo"<div id='blanco'>";
           echo "<h1>Pagar con:</h1>";
-  include_once("../connection.php");
+ 
 
 ?>
 
@@ -53,7 +58,8 @@ $idped = $_GET['idped'];
 
 
 <?php
-      $paypal = $_POST['pagar'];
+  
+     $paypal = $_POST['pagar'];
       if ($paypal== "paypal") {
 
           echo "<form method='post'>";

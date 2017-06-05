@@ -31,7 +31,8 @@
     include_once("../menu.php");
 
     include_once("../connection.php");
-
+      
+    include_once("../tema.php");
 
     //MAKING A SELECT QUERY
 

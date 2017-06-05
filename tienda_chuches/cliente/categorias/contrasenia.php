@@ -10,7 +10,11 @@
 <link rel="stylesheet" type="text/css" href="categoria.css">
   <link rel="shortcut icon" href="../../img/logo.ico">
   <title>TODO CHUCHES</title>
-
+<style>
+      body{
+          min-width: 796px;
+      }
+</style>
 </head>
 
 <body>
@@ -21,6 +25,11 @@
 
   if (isset($_SESSION["user"])) {
       include_once("../menu.php");
+      
+      include_once("../connection.php");
+      
+      include_once("../tema.php");
+      
       $apo = $_GET['apo'];
       echo" <div class='login1'>
         <div id='login2'>";
@@ -30,9 +39,7 @@
 
           echo"<td>";
           echo"<div id='blanco'>";
-    echo "<h1>Cambiar contraseña</h1>";
-
-      include_once("../connection.php");
+    echo "<h1>Cambiar contraseña</h1>";      
 
     echo"<div id='h'>";
     echo "<form method='post'>";

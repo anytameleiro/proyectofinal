@@ -24,7 +24,7 @@ body {
 .plan {
     padding: 15px;
     box-sizing: border-box;
-	background-color: rgba(255,255,255,0.8);
+/*	background-color: rgba(255,255,255,0.8);*/
 	float: left;
 	text-align: center;
 	border-radius: 5px;
@@ -42,7 +42,7 @@ body {
 }
 
 .price {
-  background: #3e4f6a;
+/*  background: #3e4f6a;*/
   color: #fff;
   width:70px;
   height:70px;
@@ -65,17 +65,16 @@ body {
 #login2 {
 
   border-radius:20px;
-  background: rgba(0, 0, 0, 0.4);
+/*  background: rgba(0, 0, 0, 0.4);*/
   background-attachment: fixed;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   clear:both;
   overflow:hidden;
 /*  min-width: 1260px;*/
-  width:93%;
+  width:91%;
  	
-  padding-bottom:  10px;
   margin:10px auto;
-  padding: 5px;
+  padding:20px;
   text-align: center;
   list-style:none;
 }
@@ -135,12 +134,13 @@ table{
 	padding-right:  250px;
 }
 #blanco{
-	background-color: white;
+/*	background-color: white;*/
 	padding: 50px;
 	border-radius: 20px;
 	color: rgba( 0, 0, 0, 0.7 );
 	margin: 20px;
 }
+
 span{
 	width: 150px;
 	display: inline-block;
@@ -154,14 +154,16 @@ button{
   border: 0;
   padding: 13px;
   font-size: 15px;
-  background-color:#8d7b8c;
+/*  background-color:#8d7b8c;*/
   border-radius:20px;
   color: black;
 
 }
+/*
 button:hover{
   background-color: #635762;
 }
+*/
 input[type="number"] {
    width:50px;
 }
@@ -171,12 +173,12 @@ input[type="number"] {
 	width: 250px;
 	height: 280px;
 	overflow-x:auto;
-	background-color: rgba(255,255,255,0.9);
+/*	background-color: rgba(255,255,255,0.9);*/
 	border-radius: 20px;
     margin-top: 50px;
 }
 #atras{
-	background-color: #425470;
+/*	background-color: #425470;*/
 	padding: 10px;
 	border-radius: 20px;
 	color:white;
@@ -195,8 +197,13 @@ input[type="number"] {
       border-collapse: collapse;
       padding: 8px;
   }
+#dos a{
+    text-decoration: none;
+/*    color: #6880A6;*/
+text-transform: uppercase;
+}
 #negro{
-		background-color:#425470;
+/*		background-color:#425470;*/
 		border-radius: 20px;
 		color: white;
 		margin-top: 10px;
@@ -239,7 +246,7 @@ input[type="number"] {
 	width: 400px;
 	height: 280px;
 	overflow-x:auto;
-	background-color: rgba(255,255,255,0.9);
+/*	background-color: rgba(255,255,255,0.9);*/
 	border-radius: 20px;
     margin-top: 50px;
   }
@@ -251,8 +258,14 @@ input[type="number"] {
 	width: 600px;
 	height: 280px;
 	overflow-x:auto;
-	background-color: rgba(255,255,255,0.9);
+/*	background-color: rgba(255,255,255,0.9);*/
 	border-radius: 20px;
     margin-top: 50px;
   }
+}
+#color:hover {
+	-webkit-transform: scale(1.04);
+}
+#color{
+    float:left; 
 }

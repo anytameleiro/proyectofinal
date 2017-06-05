@@ -13,12 +13,7 @@
     <link rel="shortcut icon" href="../../img/logo.ico">
     <link rel="stylesheet" href="prueba.css">
   <title>TODO CHUCHES</title>
-  <style>
-  table{
-    margin:auto;
-  }
-
-  </style>
+  <style></style>
 </head>
 
 <body>
@@ -31,7 +26,13 @@
     //SESSION ALREADY CREATED
 
     include_once("../menu.php");
-    echo" <div class='login1'>
+    
+    include_once("../connection.php");
+    
+    include_once("../tema.php");
+      
+    
+      echo" <div class='login1'>
       <div id='login2'>";
     ?>
    <div id="blanco">
@@ -119,10 +120,7 @@
               dots[slideIndex-1].className += " active";
             }
         </script>
-    </td>
-     </tr>
 
-</table>
     <?php
     echo" </div>";
       echo" </div>";

@@ -3,7 +3,7 @@ body{
 }
 
 #cuerpo {
-    background-color: #425470;
+/*    background-color: #425470;*/
   width:93%;
     border-radius: 3px;
 color: white;
@@ -34,7 +34,7 @@ float: left;
 float: left;
 }
 .topnav {
-    background-color: #6880a6;
+/*    background-color: #6880a6;*/
     overflow: hidden;
     width: 93%;
     margin: auto;
@@ -52,7 +52,7 @@ float: left;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+/*    background-color: #ddd;*/
     color: black;
 }
 #chico{

@@ -11,7 +11,11 @@
   <link rel="shortcut icon" href="../../img/logo.ico">
   <title>TODO CHUCHES</title>
 
-
+<style>
+      body{
+          min-width: 1184px;
+      }
+</style>
 </head>
 
 <body>
@@ -23,7 +27,11 @@
   if (isset($_SESSION["user"])) {
 $user=$_SESSION["user"];
     include_once("../menu.php");
-
+    
+    include_once("../connection.php");
+      
+    include_once("../tema.php");
+      
         echo" <div class='login1'>
           <div id='login2'>";
           echo"<table>
@@ -52,8 +60,6 @@ $user=$_SESSION["user"];
     <div class="contenido">
 
 <?php
-    include_once("../connection.php");
-
 
     //MAKING A SELECT QUERY
 

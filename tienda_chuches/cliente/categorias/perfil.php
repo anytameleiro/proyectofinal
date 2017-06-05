@@ -26,12 +26,14 @@
   if (isset($_SESSION["user"])) {
 
     include_once("../menu.php");
-
-
+      
+    include_once("../connection.php");
+     
+    include_once("../tema.php");
 
     echo" <div class='login1'>
       <div id='login2'>";
-      echo"<table style='margin: auto;'>
+      echo"<table>
       <tr><td id='m' valign='top'>";
     include_once("../menuv.php");
 
