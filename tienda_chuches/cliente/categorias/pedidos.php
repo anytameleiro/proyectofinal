@@ -42,6 +42,7 @@ $user=$_SESSION["user"];
         echo"<td>";
         echo"<div id='blanco'>";
     echo "<h1>Pedidos</h1>";
+      echo"<p><a href='../pdf/imprimir.php'  target='_blank'>PDF de los Pedidos Pagados</a></p>";
     ?>
     <div class="titulo">
         <table id='dos' >
@@ -105,6 +106,7 @@ echo"</table>";
 
 echo" </div>";
 echo" </div>";
+      
 include_once("../info.php");
   } else {
     session_destroy();
