@@ -1,3 +1,3 @@
 <?php
-  include_once("login.php");
+ header("location: instalar/uno.php");
 ?>

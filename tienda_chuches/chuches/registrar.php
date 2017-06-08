@@ -31,6 +31,7 @@
                 <span>Email:</span><input type="email" name="email" placeholder="email" maxlength='50' ><br>
                 <span>Direccion:</span><input type="text" name="direccion" placeholder="direccion" maxlength='50'required><br>
                 <span>Telefono:</span><input type="text" name="tel" placeholder="telefono" maxlength='9'  pattern='[0-9]{9}' title='Solo numeros' requiered><br>
+                
     	          <input id="entrar" type="submit" value="Enviar" name="send">
                 <p class="mensage"> <a href="login.php">Atras</a></p>
 
@@ -56,7 +57,7 @@
 
 
     if ($cont==$cont2){
-            $consulta= "INSERT INTO cliente VALUES('$nom','$ape','$dir','$apodo','$email',MD5('$cont'),'$tel');";
+            $consulta= "INSERT INTO cliente VALUES('$nom','$ape','$dir','$apodo','$email',MD5('$cont'),'$tel','0');";
             $result = $connection->query($consulta);
             if (!$result) {
               echo "<script>
