@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-05-2017 a las 14:14:58
+-- Tiempo de generación: 07-06-2017 a las 12:24:58
 -- Versión del servidor: 10.1.21-MariaDB
 -- Versión de PHP: 5.6.30
 
@@ -98,19 +98,17 @@ CREATE TABLE `cliente` (
   `apodo` varchar(50) NOT NULL,
   `email` varchar(50) DEFAULT NULL,
   `contrasenia` varchar(64) NOT NULL,
-  `telefono` int(9) DEFAULT NULL
+  `telefono` int(9) DEFAULT NULL,
+  `tema` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `cliente`
 --
 
-INSERT INTO `cliente` (`nombre`, `apellidos`, `direccion`, `apodo`, `email`, `contrasenia`, `telefono`) VALUES
-('admin', '', 'c/ madrid, Madrid, EspaÃ±a', 'admin', 'tiendachuches@info.com', '81dc9bdb52d04dc20036dbd8313ed055', 666655423),
-('mka', 'joxao', 'mwok', 'Ana', 'huxxujha@miwj', '81dc9bdb52d04dc20036dbd8313ed055', 121111111),
-('Carmen', '', 'calle san mario,Madrid', 'Carmen', 'carmen4516@corre.edu', '81dc9bdb52d04dc20036dbd8313ed055', 123444444),
-('mama', 'papa', '233232323', 'luigi_tussam', 'kaka@kaka.com', '81dc9bdb52d04dc20036dbd8313ed055', 676323232),
-('r2d2', 'rezekty', 'sadg', 'R2d2', 'rezekyt1@gmailc.om', '560bb61685fbbe9f97135760c5cb9c2b', 687521456);
+INSERT INTO `cliente` (`nombre`, `apellidos`, `direccion`, `apodo`, `email`, `contrasenia`, `telefono`, `tema`) VALUES
+('admin', '', 'c/ madrid, Madrid, EspaÃ±a', 'admin', 'tiendachuches@info.com', '81dc9bdb52d04dc20036dbd8313ed055', 666655423, 0),
+('Carmen', '', 'calle san mario,Madrid', 'Carmen', 'carmen4516@corre.edu', '81dc9bdb52d04dc20036dbd8313ed055', 123444444, 2);
 
 -- --------------------------------------------------------
 
@@ -129,14 +127,14 @@ CREATE TABLE `contiene` (
 --
 
 INSERT INTO `contiene` (`id_pedido`, `id_chuche`, `cantidad`) VALUES
-(23, 9, 2),
-(26, 4, 4),
-(27, 9, 10),
-(28, 9, 1),
-(30, 14, 3),
-(31, 4, 2),
-(33, 7, 2),
-(34, 12, 2);
+(1, 9, 10),
+(2, 9, 1),
+(3, 14, 3),
+(4, 11, 1),
+(5, 8, 2),
+(6, 9, 3),
+(7, 17, 2),
+(8, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -159,35 +157,14 @@ CREATE TABLE `pedido` (
 --
 
 INSERT INTO `pedido` (`id_pedido`, `apodo`, `fecha`, `precio_total`, `pago`, `mes`, `year`) VALUES
-(23, 'luigi_tussam', '2017-03-13', '6.88', NULL, '', 0),
-(26, 'Ana', '2017-03-21', '4.80', 'Pagado', '', 0),
-(27, 'Carmen', '2017-03-21', '34.40', 'Pagado', '', 0),
-(28, 'Carmen', '2017-04-19', '3.44', 'Pagado', '', 0),
-(30, 'Carmen', '2017-05-23', '22.65', NULL, '05', 0),
-(31, 'Carmen', '2017-05-23', '2.40', NULL, 'May', 0),
-(33, 'Carmen', '2017-05-23', '12.40', NULL, 'Mayo', 0),
-(34, 'Carmen', '2017-05-23', '20.00', NULL, '05', 2017);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `programming_languages`
---
-
-CREATE TABLE `programming_languages` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `rating` int(5) NOT NULL,
-  `status` enum('1','0') COLLATE utf8_unicode_ci NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Volcado de datos para la tabla `programming_languages`
---
-
-INSERT INTO `programming_languages` (`id`, `name`, `rating`, `status`) VALUES
-(1, 'prueba', 1, '1'),
-(2, 'prueba2', 4, '1');
+(1, 'Carmen', '2017-03-21', '34.40', 'Pagado', '', 0),
+(2, 'Carmen', '2017-04-19', '3.44', 'Pagado', '', 0),
+(3, 'Carmen', '2017-05-23', '22.65', NULL, '05', 0),
+(4, 'Carmen', '2017-05-29', '12.30', 'Pagado', '05', 2017),
+(5, 'Carmen', '2017-05-29', '10.26', 'Pagado', '05', 2017),
+(6, 'Carmen', '2017-05-29', '10.32', NULL, '05', 2017),
+(7, 'Carmen', '2017-05-29', '17.98', NULL, '05', 2017),
+(8, 'Carmen', '2017-05-29', '5.44', NULL, '05', 2017);
 
 --
 -- Índices para tablas volcadas
@@ -230,12 +207,6 @@ ALTER TABLE `pedido`
   ADD KEY `id_pedido` (`id_pedido`);
 
 --
--- Indices de la tabla `programming_languages`
---
-ALTER TABLE `programming_languages`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -248,12 +219,7 @@ ALTER TABLE `chuches`
 -- AUTO_INCREMENT de la tabla `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `id_pedido` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
---
--- AUTO_INCREMENT de la tabla `programming_languages`
---
-ALTER TABLE `programming_languages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pedido` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 --
 -- Restricciones para tablas volcadas
 --

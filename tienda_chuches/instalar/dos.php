@@ -24,6 +24,20 @@
                        echo "Query Error";
                      var_dump($tabla1);
                   }
+        $cat=("INSERT INTO `categoria` (`id_categoria`, `nombre_cat`) VALUES
+                (1, 'Gomitas'),
+                (2, 'Caramelos'),
+                (3, 'Nubes'),
+                (4, 'Pica picas'),
+                (5, 'Regaliz'),
+                (6, 'Chicles'),
+                (7, 'Gelatinas'),
+                (8, 'Otros');");
+        $result = $connection->query($cat);
+                    if (!$result) {
+                       echo "Query Error";
+                     var_dump($cat);
+                  }
         
         $tabla2=("CREATE TABLE `chuches` (
           `id_chuche` int(10) NOT NULL,

@@ -1,5 +1,6 @@
 <?php
   ob_start();
+ini_set('error_reporting',0);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +36,7 @@
                 <span>Telefono:</span><input type="text" name="tel" placeholder="telefono" maxlength='9'  pattern='[0-9]{9}' title='Solo numeros' requiered><br>
                 
     	          <input id="entrar" type="submit" value="Enviar" name="send">
-                <p class="mensage"> <a href="login.php">Atras</a></p>
+              
                 
             </div>
          </form>
