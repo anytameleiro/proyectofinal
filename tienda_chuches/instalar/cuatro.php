@@ -64,6 +64,20 @@
                        echo "Query Error";
                      var_dump($insert3);
                   }
+         $insert5=("INSERT INTO `pedido` (`id_pedido`, `apodo`, `fecha`, `precio_total`, `pago`, `mes`, `year`) VALUES
+            (1, 'Carmen', '2017-03-21', '34.40', 'Pagado', '', 0),
+            (2, 'Carmen', '2017-04-19', '3.44', 'Pagado', '', 0),
+            (3, 'Carmen', '2017-05-23', '22.65', NULL, '05', 0),
+            (4, 'Carmen', '2017-05-29', '12.30', 'Pagado', '05', 2017),
+            (5, 'Carmen', '2017-05-29', '10.26', 'Pagado', '05', 2017),
+            (6, 'Carmen', '2017-05-29', '10.32', NULL, '05', 2017),
+            (7, 'Carmen', '2017-05-29', '17.98', NULL, '05', 2017),
+            (8, 'Carmen', '2017-05-29', '5.44', NULL, '05', 2017);");
+            $result = $connection->query($insert5);
+                    if (!$result) {
+                       echo "Query Error";
+                     var_dump($insert5);
+                  }
         
             $insert4=("INSERT INTO `contiene` (`id_pedido`, `id_chuche`, `cantidad`) VALUES
             (1, 9, 10),
@@ -80,20 +94,7 @@
                      var_dump($insert4);
                   }
             
-            $insert5=("INSERT INTO `pedido` (`id_pedido`, `apodo`, `fecha`, `precio_total`, `pago`, `mes`, `year`) VALUES
-            (1, 'Carmen', '2017-03-21', '34.40', 'Pagado', '', 0),
-            (2, 'Carmen', '2017-04-19', '3.44', 'Pagado', '', 0),
-            (3, 'Carmen', '2017-05-23', '22.65', NULL, '05', 0),
-            (4, 'Carmen', '2017-05-29', '12.30', 'Pagado', '05', 2017),
-            (5, 'Carmen', '2017-05-29', '10.26', 'Pagado', '05', 2017),
-            (6, 'Carmen', '2017-05-29', '10.32', NULL, '05', 2017),
-            (7, 'Carmen', '2017-05-29', '17.98', NULL, '05', 2017),
-            (8, 'Carmen', '2017-05-29', '5.44', NULL, '05', 2017);");
-            $result = $connection->query($insert5);
-                    if (!$result) {
-                       echo "Query Error";
-                     var_dump($insert5);
-                  }
+           
         
           
         header("Location: cinco.php");

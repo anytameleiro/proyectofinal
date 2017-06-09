@@ -55,7 +55,7 @@
     echo"<br><a id='atras' href='categoria1.php?idcat=$obj->id_categoria'>Atras<br></a>";
         echo"</ul>";
         echo"</li>";
-    echo"<li class='plan2' style='width: 70%;text-align: center;'>";
+    echo"<li class='plan2' style='width: 60%;text-align: center;'>";
     echo"<ul class='planContainer'>";
     echo "<div id='desc' style='margin: auto;'>".$obj->descripcion."</div><br><br>";
     echo"Cantidad: <input type='number' min='1' max='20' name='cantidad' required/> <br><br><br>";
