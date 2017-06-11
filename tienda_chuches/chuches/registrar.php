@@ -30,7 +30,7 @@
                 <span>Repita la contraseña:</span><input type="password" name="cont2" placeholder="contraseña"maxlength='64' required><br>
                 <span>Email:</span><input type="email" name="email" placeholder="email" maxlength='50' ><br>
                 <span>Direccion:</span><input type="text" name="direccion" placeholder="direccion" maxlength='50'required><br>
-                <span>Telefono:</span><input type="text" name="tel" placeholder="telefono" maxlength='9'  pattern='[0-9]{9}' title='Solo numeros' requiered><br>
+                <span>Teléfono:</span><input type="text" name="tel" placeholder="telefono" maxlength='9'  pattern='[0-9]{9}' title='Solo numeros' requiered><br>
                 
     	          <input id="entrar" type="submit" value="Enviar" name="send">
                 <p class="mensage"> <a href="login.php">Atras</a></p>

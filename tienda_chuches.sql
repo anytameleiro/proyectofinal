@@ -1,20 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.6.5.2
--- https://www.phpmyadmin.net/
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 07-06-2017 a las 12:24:58
--- Versión del servidor: 10.1.21-MariaDB
--- Versión de PHP: 5.6.30
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Base de datos: `tienda_chuches`
@@ -22,28 +5,6 @@ SET time_zone = "+00:00";
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `categoria`
---
-
-CREATE TABLE `categoria` (
-  `id_categoria` int(10) NOT NULL,
-  `nombre_cat` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `categoria`
---
-
-INSERT INTO `categoria` (`id_categoria`, `nombre_cat`) VALUES
-(1, 'Gomitas'),
-(2, 'Caramelos'),
-(3, 'Nubes'),
-(4, 'Pica picas'),
-(5, 'Regaliz'),
-(6, 'Chicles'),
-(7, 'Gelatinas'),
-(8, 'Otros');
 
 -- --------------------------------------------------------
 
@@ -171,6 +132,29 @@ INSERT INTO `pedido` (`id_pedido`, `apodo`, `fecha`, `precio_total`, `pago`, `me
 --
 
 --
+-- Estructura de tabla para la tabla `categoria`
+--
+
+CREATE TABLE `categoria` (
+  `id_categoria` int(10) NOT NULL,
+  `nombre_cat` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+INSERT INTO `categoria` (`id_categoria`, `nombre_cat`) VALUES
+(1, 'Gomitas'),
+(2, 'Caramelos'),
+(3, 'Nubes'),
+(4, 'Pica picas'),
+(5, 'Regaliz'),
+(6, 'Chicles'),
+(7, 'Gelatinas'),
+(8, 'Otros');
+
+--
 -- Indices de la tabla `categoria`
 --
 ALTER TABLE `categoria`
@@ -242,7 +226,3 @@ ALTER TABLE `contiene`
 --
 ALTER TABLE `pedido`
   ADD CONSTRAINT `pedido_ibfk_1` FOREIGN KEY (`apodo`) REFERENCES `cliente` (`apodo`) ON DELETE CASCADE ON UPDATE CASCADE;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
