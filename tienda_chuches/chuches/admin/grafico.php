@@ -28,7 +28,7 @@
     <a id="salir" href='../salir.php' >Cerrar sesion</a>
     <h1>Todas las chuches</h1>
 
-     <div class="contenido" style="height: 600px;overflow-x: visible;">
+     <div class="contenido" style="height: auto;overflow-x: visible;">
      <table>
       <tbody>
     <?php
@@ -150,7 +150,7 @@
     </script>
 
     <!-- Display the pie chart -->
-    <div id='categoriagrafico'><div id="piechart_3d" style="width: 100%;height: 600px;"></div></div>
+    <div id='categoriagrafico'><div id="piechart_3d" style="width: 38%;height: 400px;float:left;"></div></div>
 
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
@@ -180,7 +180,7 @@
         chart.draw(data, options);
       }
     </script>
-    <div id='pedidografico'><div id="chart_div" style="width: 100%;height: 500px; "></div></div>
+    <div id='pedidografico'><div id="chart_div" style="width: 60%;height:400px;float:left; "></div></div>
 
         </tbody>
          </table>
@@ -188,8 +188,7 @@
 
     <?php
 
-    echo "<br><a href='añadirchuche.php'><input  id='entrar' type='submit' value='+ Añadir' /></a><br>";
-
+   
     echo "<br><a class='atras' href='admin.php'>Atras</a>";
 
 

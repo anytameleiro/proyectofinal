@@ -5,7 +5,7 @@
 session_start();
 if (isset($_SESSION["user"])) {
 $user=$_SESSION["user"];
-require('/libreria/fpdf.php');
+require('libreria/fpdf.php');
 require_once("../connection.php");
     
 class PDF extends FPDF
